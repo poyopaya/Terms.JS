@@ -252,7 +252,7 @@
                 });
                 termsObj.playBtn.find('i').removeClass('fa-volume-up').addClass('fa-refresh fa-spin');
                 if(settings.audio == 'free'){
-                    audioPlayer = new Audio('http://tts-api.com/tts.mp3?q='+encodeURI(output));
+                    audioPlayer = new Audio('http://translate.google.com/translate_tts?tl='+curLang+'&q='+encodeURI(output));
                 }else{
                     var curLangAudio = 'us';
                     for(var i = 0; i < settings.langs.length; i++){
